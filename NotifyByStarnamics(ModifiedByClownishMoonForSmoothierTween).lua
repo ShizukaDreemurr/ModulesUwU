@@ -45,7 +45,7 @@ function module.notify(target, title, text, color, dur)
     if target:WaitForChild("PlayerGui"):FindFirstChild("simpleSuite") ~= nil then
         local duration = dur or 3
         if title ~= nil and text ~= nil and color ~= nil then
-            local selectedColor = colors.default
+            local selectedColor = colors
 
             if
                 string.lower(color) == "alert" or string.lower(color) == "success" or string.lower(color) == "warning" or
@@ -64,7 +64,7 @@ function module.notify(target, title, text, color, dur)
                     selectedColor = colors.default
                 end
             else
-                selectedColor = colors.default
+                selectedColor = colors
             end
 
             local notification_number = 1
