@@ -13,7 +13,7 @@ local uwu = function(team)
       "Beli",
       "Fragments",
       "Level",
-      "Radar",
+   -- "Radar",
       "HP",
   }
   if game:GetService("Players").LocalPlayer.PlayerGui.Main:FindFirstChild("ChooseTeam") then
