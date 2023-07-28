@@ -1,4 +1,4 @@
-local uwu = function(team)
+return function(team)
   game:GetService("ReplicatedStorage").Remotes["CommF_"]:InvokeServer("SetTeam", team)
   local makeVisible = {
       "Compass",
@@ -36,4 +36,3 @@ local uwu = function(team)
       end
   end
 end
-return uwu
